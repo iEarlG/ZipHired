@@ -1,15 +1,75 @@
-# Expo Router Example
+# ZipHired is a Mobile Application for Job Hunting. Built using RapidAPI (JSearch API) | Expo, Expo Router
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+ZipHired is a job search platform designed to help job seekers find employment opportunities quickly and easily. With a user-friendly interface and a wide range of job listings, ZipHired provides job seekers with the resources they need to find their dream job. Whether you're a recent graduate or an experienced professional, ZipHired offers a range of job listings across various industries and career levels. From entry-level positions to executive roles, ZipHired has got you covered. With features like resume uploading and job application tracking, job seekers can stay organized throughout the job search process. So why wait? Download ZipHired today and take the first step towards your dream job!
 
-## 🚀 How to use
+## Table of contents
 
-```sh
-npx create-react-native-app -t with-router
-```
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-## 📝 Notes
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-- [Expo Router: Docs](https://expo.github.io/router)
-- [Expo Router: Repo](https://github.com/expo/router)
-- [Request for Comments](https://github.com/expo/router/discussions/1)
+## Overview
+
+### Screenshot
+
+![image]()
+
+
+![image]()
+
+
+### Links
+
+- Solution URL: ()
+- Live Site URL: ()
+
+## My process
+
+- YouTube
+- StackOverFlow
+- Google
+- ChatGPT
+- Discord
+- Github
+
+### Built with
+
+- React JS
+- React Native
+- Styles Sheets
+- Expo | Expo Router
+- RapidAPI | JSearch API
+
+### What I learned
+
+..
+
+### Continued development
+
+The development of the Mobile Application is still in progress there is still a lot to process, about the request error 249, 401, 403
+
+### Useful resources
+
+- [Example resource 1](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch) - This API help me to built my Mobile Application
+- [Example resource 2](https://stackoverflow.com/questions/69175954/react-native-env-file-could-not-be-found-within-the-project) - This help me atleast solve my problem about the React native en-variables
+
+## Author
+
+- Website - [Earl Villapaz](https://iearl-v.me/)
+- Frontend Mentor - [@iEarlG](https://www.frontendmentor.io/profile/iEarlG)
+- Twitter - [@itseaaarloffcl](https://www.twitter.com/itseaaarloffcl)
+
+
+## Acknowledgments
+
+Thanks to StackOverFlow and Github they solved some of my problems about the **React native en-variables**
+
