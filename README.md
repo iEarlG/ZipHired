@@ -2,10 +2,13 @@
 
 ## Introducation
 
+### What is ZipHired
 ZipHired is a job search platform designed to help job seekers find employment opportunities quickly and easily. With a user-friendly interface and a wide range of job listings, ZipHired provides job seekers with the resources they need to find their dream job. Whether you're a recent graduate or an experienced professional, ZipHired offers a range of job listings across various industries and career levels. From entry-level positions to executive roles, ZipHired has got you covered. With features like resume uploading and job application tracking, job seekers can stay organized throughout the job search process. So why wait? Download ZipHired today and take the first step towards your dream job!
 
 ## Table of contents
+
 - [Introduction](#introduction)
+  - [What is ZipHired](#what-is-ziphired)
 - [Overview](#overview)
   - [Screenshot](#screenshot)
   - [Links](#links)
