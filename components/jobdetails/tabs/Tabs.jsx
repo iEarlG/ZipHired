@@ -1,14 +1,34 @@
-import React from 'react'
-import { View, Text } from 'react-native'
 
-import styles from './tabs.style'
+import { View, Text, TouchableOpacity, FlatList } from 'react-native';
 
-const Tabs = () => {
+import { SIZES } from '../../../constants';
+import styles from './tabs.style';
+
+const TabButton = ({ name, activeJobs, onHandleSearchType }) => (
+  <TouchableOpacity style={styles.btn(name, activeJobs)} onPress={onHandleSearchType}>
+    <Text style={styles.btnText(name, activeJobs)}>{name}</Text>
+  </TouchableOpacity>
+)
+
+const Tabs = ({ DetailsJob, activeJobs, setActiveJobs }) => {
   return (
-    <View>
-      <Text>Tabs</Text>
+    <View style={styles.container}> 
+      <FlatList 
+        data={DetailsJob}
+        renderItem={({ item }) => (
+          <TabButton
+            name={item}
+            activeJobs={activeJobs}
+            onHandleSearchType={() => setActiveJobs(item)}
+          />
+        )}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        keyExtractor={item => item}
+        contentContainerStyle={{ columnGap: SIZES.small / 2  }}
+      />
     </View>
   )
 }
 
-export default Tabs
+export default Tabs;
