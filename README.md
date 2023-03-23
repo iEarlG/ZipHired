@@ -34,6 +34,7 @@ ZipHired is a job search platform designed to help job seekers find employment o
 
 - Solution URL: ()
 - Live Site URL: ()
+- Project page: (https://expo.dev/@iearlg/ZipHired?serviceType=classic&distribution=expo-go | Learn more: https://expo.fyi/project-page)
 
 ## My process
 
@@ -58,7 +59,7 @@ ZipHired is a job search platform designed to help job seekers find employment o
 
 ### Continued development
 
-The development of the Mobile Application is still in progress there is still a lot to process, about the request error 249, 401, 403
+The development of the Mobile Application is still in progress there are still a problem about the API it's not fetching all the data at the same time, maybe im just using a free contract plan. And the Landing page of the website is on making as we speak!!
 
 ### Useful resources
 
