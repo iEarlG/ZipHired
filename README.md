@@ -33,7 +33,8 @@ ZipHired is a job search platform designed to help job seekers find employment o
 ### Links
 
 - Solution URL: ()
-- Live Site URL: (Project page: https://expo.dev/@iearlg/ZipHired?serviceType=classic&distribution=expo-go Learn more: https://expo.fyi/project-page)
+- Live Site URL: ()
+- Project page: (https://expo.dev/@iearlg/ZipHired?serviceType=classic&distribution=expo-go | Learn more: https://expo.fyi/project-page)
 
 ## My process
 
