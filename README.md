@@ -24,12 +24,10 @@ ZipHired is a job search platform designed to help job seekers find employment o
 
 ### Screenshot
 
-![Screenshot_1679569533](https://user-images.githubusercontent.com/91045673/227185373-34d9a31f-4f77-4673-9971-7259acc350bf.png)
-![Screenshot_1679569592](https://user-images.githubusercontent.com/91045673/227185432-cd10f87b-ab7b-4f6b-a01f-aabf67d1684b.png)
-![Screenshot_1679569559](https://user-images.githubusercontent.com/91045673/227185435-81b3eef3-47eb-4f2d-9e53-2119ae08e233.png)
-![Screenshot_1679569577](https://user-images.githubusercontent.com/91045673/227185444-b1a48ec5-0372-4bdc-a3bc-07803313e236.png)
-
-
+<img src="https://user-images.githubusercontent.com/91045673/227185373-34d9a31f-4f77-4673-9971-7259acc350bf.png" height="950" />
+<img src="https://user-images.githubusercontent.com/91045673/227185373-34d9a31f-4f77-4673-9971-7259acc350bf.png" height="950" />
+<img src="https://user-images.githubusercontent.com/91045673/227185435-81b3eef3-47eb-4f2d-9e53-2119ae08e233.png" height="950" />
+<img src="https://user-images.githubusercontent.com/91045673/227185444-b1a48ec5-0372-4bdc-a3bc-07803313e236.png" height="950" />
 
 ### Links
 
