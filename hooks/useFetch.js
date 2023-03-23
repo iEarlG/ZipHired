@@ -2,11 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { RAPID_API_KEY } from "react-native-dotenv";
 
-const rapidApiKey = RAPID_API_KEY;
-
-import Config from "react-native-config";
-
 const useFetch = (endpoint, query) => {
+    const rapidApiKey = RAPID_API_KEY;
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { View, Text, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native';
+import { useState, useCallback } from 'react';
+import { View, Text, TouchableOpacity, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
 import { useRouter } from 'expo-router';
 
 import { COLORS, SIZES } from '../../../constants';
@@ -12,19 +12,25 @@ const Popularjobs = () => {
   const router = useRouter();
   const [selectedJobs, setSelectedJobs] = useState();
 
-  const { data, isLoading, error } = useFetch('search', { 
+  const { data, isLoading, error, refetching } = useFetch('search', { 
     query: 'React Developer',
     num_pages: '1',
+    page: '1',
   });
-  //console.logo(data);
 
   const handleCardPress = (item) => {
-    router.push(`/job-details/${item.job_id}`);
+    router.push(`/job-details/${item?.job_id}`);
     setSelectedJobs(item.job_id);
   }
 
+  const onRefresh = useCallback(() => {
+    setRefreshing(true);
+    refetching();
+    setRefreshing(false);
+  }, []);
+
   return (
-    <View style={styles.container}>
+    <View style={styles.container} refreshControl={<RefreshControl refreshing={refetching} onRefresh={onRefresh} />} >
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Popular Jobs</Text>
         <TouchableOpacity>       
@@ -36,7 +42,7 @@ const Popularjobs = () => {
         {isLoading ? ( 
           <ActivityIndicator size="large" color={COLORS.primary} /> 
           ) : error ? (
-            <Text>Something went wrong. Please try again.</Text>
+            <Text>Something went wrong. Please try again. API is not working properly!</Text>
           ) : (
             <FlatList 
               data={data}

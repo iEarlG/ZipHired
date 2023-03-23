@@ -5,6 +5,13 @@
       "bundler": "metro"
     },
     "name": "ZipHired",
-    "slug": "ZipHired"
+    "slug": "ZipHired",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-e.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
   }
 }

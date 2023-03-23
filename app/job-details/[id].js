@@ -3,7 +3,7 @@ import { useCallback, useState } from 'react';
 import { Text, View, SafeAreaView, ScrollView, ActivityIndicator, RefreshControl } from 'react-native';
 import { Stack, useRouter, useSearchParams } from 'expo-router';
 
-import { Company, JobAbout, JobFooter, JobTabs, ScreenHeaderBtn, Specific, Specifics } from '../../components';
+import { Company, JobAbout, JobFooter, JobTabs, ScreenHeaderBtn, Specifics } from '../../components';
 import { COLORS, icons, SIZES } from '../../constants';
 import useFetch from '../../hooks/useFetch';
 
@@ -17,18 +17,28 @@ const JobDetails = () => {
     const [refreshing, setRefreshing] = useState(false);
     const [activeJobs, setActiveJobs] = useState(DetailsJob[0]);
 
-    const onRefresh = () => {}
+    const onRefresh = useCallback(() => {
+        setRefreshing(true);
+        refetching();
+        setRefreshing(false);
+    }, []);
     const displayJobsContent = () => {
         switch (activeJobs) {
             case "About":
-                
+                return <JobAbout 
+                    title="Job Description"
+                    info={data[0].job_description ?? "No description available yet"}
+                />;
             case "Qualification":
                 return <Specifics
                 title="Qualification"
-                points={data[0].job_highlights?.qualification ?? ['No data available yet']}
+                points={data[0].job_highlights?.Qualifications ?? ['No data available yet']}
             />
             case "Responsibilities":
-                
+                return <Specifics
+                title="Responsibilities"
+                points={data[0].job_highlights?.Responsibilities ?? ['No data available yet']}
+            />
             default:
             break;
         }
@@ -87,6 +97,8 @@ const JobDetails = () => {
                     </View>
                 )}
             </ScrollView>
+
+            <JobFooter url={data[0]?.job_google_link ?? "https://careers.google.com/jobs/results"}/>
         </>
     </SafeAreaView>
   )
